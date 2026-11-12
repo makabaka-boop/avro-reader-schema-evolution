@@ -1,0 +1,21 @@
+{
+  "type": "record",
+  "name": "com.bag.Bag",
+  "fields": [
+    {
+      "name": "id",
+      "type": "long"
+    },
+    {
+      "name": "tags",
+      "type": {
+        "type": "array",
+        "items": "string"
+      }
+    },
+    {
+      "name": "active",
+      "type": "boolean"
+    }
+  ]
+}

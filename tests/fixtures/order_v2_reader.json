@@ -1,0 +1,56 @@
+{
+  "type": "record",
+  "name": "com.shop.OrderV2",
+  "aliases": [
+    "com.shop.OrderV1"
+  ],
+  "fields": [
+    {
+      "name": "total",
+      "type": "long",
+      "aliases": [
+        "count"
+      ]
+    },
+    {
+      "name": "customer",
+      "type": {
+        "type": "record",
+        "name": "com.shop.CustomerV2",
+        "aliases": [
+          "com.shop.CustomerV1"
+        ],
+        "fields": [
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "customer_id",
+            "type": "long",
+            "aliases": [
+              "cid"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "order_id",
+      "type": "string"
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "default": "pending"
+    },
+    {
+      "name": "note",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

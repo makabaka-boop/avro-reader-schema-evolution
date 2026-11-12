@@ -1,0 +1,22 @@
+{
+  "type": "record",
+  "name": "com.pay.PaymentV2",
+  "aliases": [
+    "com.pay.PaymentV1"
+  ],
+  "fields": [
+    {
+      "name": "payment_id",
+      "type": "string"
+    },
+    {
+      "name": "detail",
+      "type": [
+        "int",
+        "string",
+        "null"
+      ],
+      "default": 0
+    }
+  ]
+}

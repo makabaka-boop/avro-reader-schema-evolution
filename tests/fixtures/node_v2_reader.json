@@ -1,0 +1,33 @@
+{
+  "type": "record",
+  "name": "com.tree.NodeV2",
+  "aliases": [
+    "com.tree.NodeV1"
+  ],
+  "fields": [
+    {
+      "name": "children",
+      "type": {
+        "type": "array",
+        "items": "com.tree.NodeV2"
+      }
+    },
+    {
+      "name": "next",
+      "type": [
+        "null",
+        "com.tree.NodeV2"
+      ],
+      "default": null
+    },
+    {
+      "name": "value",
+      "type": "long"
+    },
+    {
+      "name": "depth",
+      "type": "int",
+      "default": 0
+    }
+  ]
+}

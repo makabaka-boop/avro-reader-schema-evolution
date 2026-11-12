@@ -1,0 +1,8 @@
+.venv/
+.bootstrap/
+__pycache__/
+*.pyc
+.pytest_cache/
+tests/fixtures/*.avro
+.git/
+*.egg-info/
